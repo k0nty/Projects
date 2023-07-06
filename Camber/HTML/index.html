@@ -1,88 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/IMG/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet">
     <title>Camber</title>
 </head>
 <body>
     <header>
-        <nav class="nav-conteiner">
-            <img src="/SVG/Logo.svg" alt="Logo">
-            <div class="panel-conteiner">
-                <ul class="nav-panel">
-                    <li class="nav-panel__block"><a href="#" class="nav-panel__link">Інструкція</a></li>
-                    <li class="nav-panel__block"><a href="#" class="nav-panel__link">Тарифи</a></li>
-                    <li class="nav-panel__block"><a href="#" class="nav-panel__link">Про нас</a></li>
-                    <li class="nav-panel__block"><button class="btn">Log in/Sing in</button></li>
+        <nav class="nav-container">
+            <div>
+                <img class="logo _anim-items" src="/SVG/Logo.svg" alt="Logo" >
+            </div>
+            <div class="panel-container">
+                <ul class="nav-panel _anim-items">
+                    <li class="nav-panel__block"><a href="#instuction-article" class="nav-panel__link">Instruction</a></li>
+                    <li class="nav-panel__block"><a href="#rate-wrap" class="nav-panel__link">Subscriptions</a></li>
+                    <li class="nav-panel__block"><a href="#inform-of-bot__developers" class="nav-panel__link">About us</a></li>
+                    <li class="nav-panel__block"><a class="btn news-btn" href="/HTML/news.html">News</a></li>
                 </ul>
             </div>
+            <svg class="vbp-header-menu-button__svg">
+                <line x1="0" y1="50%" x2="100%" y2="50%" class="top lines" shape-rendering="crispEdges" />
+                <line x1="0" y1="50%" x2="100%" y2="50%" class="middle lines" shape-rendering="crispEdges" />
+                <line x1="0" y1="50%" x2="100%" y2="50%" class="bottom lines" shape-rendering="crispEdges" />
+            </svg>
         </nav>
     </header>
     <main>
-        <img src="/IMG/bg.svg" alt="" class="bg1">
+        <a class="back-btn" href="#"></a>
         <section class="main-section">
             <article class="main-article">
-                <div class="phone">
-                    <img src="/SVG/phone.svg" alt="" class="macket-phone">
+                <div class="phone-container">
+                    <div class="phone">
+                        <img src="/SVG/phone.svg" alt="phone" class="macket-phone">
+                        <div class="phone-shadow"></div>
+                    </div>
                 </div>
                 <div class="inform">
-                    <h1>Комерційний проєкт <span class="camber">Camber</span></h1>
-                    <button class="start">Розпочати користування</button>
+                    <h1>Commercial project
+                        <p class="wrapper__camber"><h2 class="camber">Camber</h2></p>
+                    </h1>
+                    <div class="main-bnt-start"><a class="start main-start" target="_blank" href="https://t.me/CamberLearnBot">Get started using</a></div>
                 </div>
             </article>
-            <article class="instuction-article">
+            <article id="instuction-article">
                 <div class="instuction-article__header">
-                    <h2 class="instuction-article__topic">Інструкція як почати користуватися ботом</h2>
-                    <button class="start instuction-article__start">Розпочати користування</button>
+                    <h2 id="instuction-article__topic">Instructions on how to start using the bot</h2>
+                    <div class="instuction-article__start"><a class="start instuction-article-start" target="_blank" href="https://t.me/CamberLearnBot">Get started using</a></div>
                     <div class="instuction-article__block-info">
-                        <div class="way-conteiner">
-                            <img src="/SVG/way.svg" alt="" class="instuction-article__way">
-                            <div class="step-conteiner">
-                                <div class="step step-1">
-                                    <p class="step-text">Крок 1</p>
+                        <div class="way-container">
+                            <img src="/SVG/way.svg" alt="way" class="instuction-article__way">
+                            <div class="step-container">
+                                <div class="step step-1 _anim-items">
+                                    <p class="step-text _anim-show">Step 1</p>
                                 </div>
-                                <div class="step step-2">
-                                    <p class="step-text">Крок 2</p>
+                                <div class="step step-2 _anim-items">
+                                    <p class="step-text _anim-show">Step 2</p>
                                 </div>          
-                                <div class="step step-3">
-                                    <p class="step-text">Крок 3</p>
+                                <div class="step step-3 _anim-items">
+                                    <p class="step-text _anim-show">Step 3</p>
                                </div>  
-                                <div class="step step-4">
-                                    <p class="step-text">Крок 4</p>
+                                <div class="step step-4 _anim-items">
+                                    <p class="step-text _anim-show">Step 4</p>
                                 </div>  
                             </div>
-                            <div class="step-inform-conteiner">
-                                <p class="step-info inform-1">Створити або мати<br><span class="step-info step-info-span">Telegram</span> акаунт</p>
-                                <p class="step-info inform-2">Вибрати найвигідніший<br><span class="step-info step-info-span">Rate</span> для себе</p>
-                                <p class="step-info inform-3">Перейти по посиланню: <span class="step-info step-info-span">Camber</span><br>Також натиснути <span class="step-info step-info-span">Start</span> для подальшої інструкції</p>
-                                <p class="step-info inform-4">Вітаю! Ви розпочали користуватися нашим <span class="step-info step-info-span">ботом</span><br><span class="step-info step-info-span">Ми дуже вдячні за підтримку!</span></p>
+                            <div class="step-inform-container">
+                                <div class="step-inform-container__block _anim-items">
+                                    <p class="step-info inform-1 _anim-show">To create or to have<br><span class="step-info yellow-span">Telegram</span> account.</p>
+                                </div>
+                                <div class="step-inform-container__block _anim-items">
+                                    <p class="step-info inform-2 _anim-show">Choose the most profitable one<br><span class="step-info yellow-span">Rate</span> for yourself.</p>
+                                </div>
+                                <div class="step-inform-container__block _anim-items">
+                                    <p class="step-info inform-3 _anim-show">Follow the link: <a class="instructions-link" target="_blank" href="https://t.me/CamberLearnBot"><span class="step-info yellow-span">Camber</span></a>.<br>Also click <span class="step-info step-info-span">Start</span> for further instructions.</p>
+                                </div>
+                                <div class="step-inform-container__block _anim-items">
+                                    <p class="step-info inform-4 _anim-show">Congratulations! You have started using our <span class="step-info yellow-span">bot</span>.<br><span class="step-info step-info-span">We are very grateful for your support!</span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
         </section>
-        <section>
-            
-        </section>
-        <section>
-            <article>
-
+        <section id="rate-wrap">
+            <article class="rate-header">
+                <div class="shop-container"><img src="/SVG/Shop.svg" alt="shop"></div>
+                <h2 id="rate-header__topic">Subscriptions</h2>
             </article>
-            <article>
-
+            <article class="rate-container">
+                <div class="rate-blocks _anim-items">
+                    <h2 class="rates-topic">"Starter"<br>subscription for $10 per month:</h2>
+                    <ul class="rates-list">
+                        <li class="rates-list__elements">Access to basic programming lessons and materials. </li>
+                        <li class="rates-list__elements">Practical tasks and exercises.</li>
+                        <li class="rates-list__elements">Exchange of experience and support from the community of programmers.</li>
+                        <li class="rates-list__elements">Online consultations with developers via chat.</li>
+                    </ul>
+                    <a class="start rate-blocks__btn" target="_blank" href="https://t.me/CamberLearnBot">Start</a>
+                </div>
+                <div class="rate-blocks _anim-items">
+                    <h2 class="rates-topic">"Advanced"<br>subscription for $50 for 6 months:</h2>
+                    <ul class="rates-list">
+                        <li class="rates-list__elements">All the benefits of the "Starter" plan. </li>
+                        <li class="rates-list__elements">Additional materials for in-depth study</li>
+                    </ul>
+                    <a class="start rate-blocks__btn" target="_blank" href="https://t.me/CamberLearnBot">Start</a>
+                </div>
+                <div class="rate-blocks _anim-items">
+                    <h2 class="rates-topic">"Professional"<br>subscription for $100 per year:</h2>
+                    <ul class="rates-list">
+                        <li class="rates-list__elements">All the benefits of the "Starter" and "Advance" plans.</li>
+                        <li class="rates-list__elements">A full programming course with practical projects.</li>
+                        <li class="rates-list__elements">Answers to questions in priority mode.</li>
+                    </ul>
+                    <a class="start rate-blocks__btn" target="_blank" href="https://t.me/CamberLearnBot">Start</a>
+                </div>
+            </article>
+            <article class="rate-footer">
+                <div class="rate-footer__wrapper">
+                    <div class="rate-footer__container">
+                        <h2 class="rate-footer__topic">Do you have any questions?</h2>
+                        <p class="rate-footer__info">Request a consultation for more information about this bot</p>
+                    </div>
+                    <div class="rate-footer__second-container">
+                        <a class="start rate-footer__btn" target="_blank" href="https://t.me/o_o1o_o">Get a consultation</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="inform-of-bot">
+            <article class="inform-container-of-project">
+                <div class="project-topic-container">
+                    <img src="/SVG/Information.svg" data-src="image.svg" loading="lazy" alt="info" class="project-svg">
+                    <h2 class="developers-topic">Information about the project</h2>
+                </div>
+                <div class="project-information-container">
+                    <div class="project-information__img-container">
+                        <img src="/IMG/info.png" data-src="image.png" loading="lazy" alt="info" class="project-information__img _anim-items">
+                    </div>
+                    <div class="project-information">
+                        <p class="project-information__text">We invite <span class="yellow-span project-information__text">you</span>  to our unique telegram bot <span class="yellow-span project-information__text">Camber</span>  - your reliable assistant in learning programming languages!
+                            Camber is a specially designed Telegram bot that helps you <span class="yellow-span project-information__text">learn programming languages effectively</span>. 
+                            Regardless of your experience - whether you are new to programming or an experienced developer, <span class="yellow-span project-information__text">Camber</span> always has something interesting for you.
+                        </p>
+                        <div class="description-container">
+                            <div class="description-head">
+                                <h2 class="description-container__topic">Camber</h2>
+                                <img src="/SVG/Project.svg" data-src="image.svg" loading="lazy" alt="project" class="description-container__svg">
+                            </div>
+                            <div class="description__text _anim-items">
+                                <ul class="description-list _anim-show">
+                                    <li class="description-list__elements">Materials: Camber sends you links to the best online courses, video tutorials, 
+                                        blogs and articles related to your programming language. You can study at your own pace, focusing on the topics that interest you the most. 
+                                        The bot always supports you with fresh and relevant information.
+                                    </li>
+                                    <li class="description-list__elements">Practice Tasks: Camber sends you regular practice tasks.
+                                        These can be real-life problems or exercises aimed at consolidating programming concepts.
+                                        You get the opportunity to put your knowledge into practice and improve your skills.
+                                    </li>
+                                    <li class="description-list__elements">Helpful Resources: Camber also sends you helpful resources, such as online programming environments, syntax references, forums, and programming communities. 
+                                        You'll always have the tools you need to learn and develop your skills.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="description-inform-block">
+                            <div class="description-text__container">
+                                <h2 class="description-container__topic">Additional</h2>
+                            </div>
+                            <div class="inform-text__container _anim-items">
+                                <p class="inform-text _anim-show">Do not spend a lot of time looking for the necessary materials and practical tasks. Join Саmber in Telegram today and start an exciting journey into the world of programming! </p>
+                            </div>
+                        </div>
+                        <div class="description-inform-block">
+                            <div class="description-text__container">
+                                <h2 class="description-container__topic">About</h2>
+                            </div>
+                            <div class="inform-text__container _anim-items">
+                                <p class="inform-text _anim-show">Camber always has something interesting for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="protject-btn-container">
+                    <a class="start project-btn-start" target="_blank" href="https://t.me/CamberLearnBot">Get started using</a>
+                </div>
+            </article>
+            <article id="inform-of-bot__developers">
+                <div class="developers-head">
+                    <div class="topic-container">
+                        <img src="/SVG/Developers.svg" data-src="image.svg" loading="lazy" alt="develop" class="develop-svg">
+                        <h2 class="developers-topic">Developers</h2>
+                    </div>
+                </div>
+                <div class="alight-container">
+                    <p class="head-inform">Our developers are highly skilled <span class="yellow-span develop-subtopic">IT</span> 
+                            specialists with experience: <span class="yellow-span develop-subtopic">Java, Spring, MongoDB, HTML5, CSS3, JavaScript, Sass.</span>
+                            They are ready to share their knowledge and life hacks, and are happy to listen to all suggestions.
+                    </p>
+                </div>
+                <div class="inform-container-of-developers">
+                    <div class="inform-container-of-developers__blocks _anim-items">
+                        <div class="inform-container-of-developers__container">
+                            <h2 class="inform-container-of-developers__topic">Prokopiuk Denys</h2>
+                            <img src="/IMG/Denys.jpg" data-src="image.svg" loading="lazy" alt="denys" class="avatars">
+                        </div>
+                        <p class="inform-container-of-developers__information">
+                            I am a Frontend developer.
+                            I have been actively studying this specialty for six months. 
+                            I am always ready to advise and support the conversation and also happy to answer all your questions and suggestions.
+                        </p>
+                        <div class="skills-list__container">
+                            <ul class="skills-list">
+                                <li class="skills-list__elements">HTML</li>
+                                <li class="skills-list__elements">CSS</li>
+                                <li class="skills-list__elements">Flex</li>
+                            </ul>
+                            <ul class="skills-list">
+                                <li class="skills-list__elements">Sass</li>
+                                <li class="skills-list__elements">JavaScript</li>
+                            </ul>
+                        </div>
+                        <a href="https://t.me/o_o1o_o" target="_blank" class="start rate-blocks__btn inform-container-of-developers__links">Contact</a>
+                    </div>
+                    <div class="inform-container-of-developers__blocks _anim-items">
+                        <div class="inform-container-of-developers__container">
+                            <h2 class="inform-container-of-developers__topic">Ozirskiy Roman</h2>
+                            <img src="/IMG/Roman.jpg" data-src="image.svg" loading="lazy" alt="denys" class="avatars">
+                        </div>
+                        <p class="inform-container-of-developers__information">
+                            I am a Java Backend developer with ambitions.  
+                            I like Java because it has backward compatibility with other versions and it makes me very happy.
+                            My motivation is to work in an international company and make this world a better place.
+                        </p>
+                        <div class="skills-list__container">
+                            <ul class="skills-list">
+                                <li class="skills-list__elements">Java</li>
+                                <li class="skills-list__elements">Spring MVC</li>
+                                <li class="skills-list__elements">Spring Boot</li>
+                            </ul>
+                            <ul class="skills-list">
+                                <li class="skills-list__elements">Spring Data</li>
+                                <li class="skills-list__elements">Spring Security</li>
+                                <li class="skills-list__elements">MongoDB</li>
+                            </ul>
+                        </div>
+                        <a href="https://t.me/RomaEthereal" target="_blank" class="start rate-blocks__btn inform-container-of-developers__links">Contact</a>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
-    <footer>
-
+    <footer class="about-information">
+        <div class="footer-container">
+            <div class="about-us footer-blocks">
+                <h2 class="about-company__title">About us</h2>
+                <p class="about-us__inform">We are a small company that develops bots to improve people's lives</p>
+                <div class="products-blocks">
+                    <h2 class="about-company__title">Social media</h2>
+                    <div class="social-list">
+                        <div class="social-list__block">
+                            <h2 class="social-list__elements">Telegram</h2>
+                            <div class="social-icons__container">
+                                <a target="_blank" href="https://t.me/CamberLearnBot"><img class="social-icons" src="/SVG/telegram.svg" data-src="image.svg" loading="lazy" alt="social-icons"></img></a>
+                                <a class="social-contact" target="_blank" href="https://t.me/CamberLearnBot">Camber</a>
+                            </div>
+                        </div>
+                        <div class="social-list__block">
+                            <h2 class="social-list__elements">TikTok</h2>
+                            <div class="social-icons__container">
+                                <a target="_blank" href="https://www.tiktok.com/@etherealrom4ik?_t=8dSewZrNcNZ&_r=1"><img class="social-icons" src="/SVG/tiktok.svg" data-src="image.svg" loading="lazy" alt="social-icons"></img></a>
+                                <a class="social-contact" target="_blank" href="https://www.tiktok.com/@etherealrom4ik?_t=8dSewZrNcNZ&_r=1">Camber</a>
+                            </div>
+                        </div>
+                        <div class="social-list__block">
+                            <h2 class="social-list__elements">YouTube</h2>
+                            <div class="social-icons__container">
+                                <a target="_blank" href="https://youtube.com/@ethrealroma"><img class="social-icons" src="/SVG/youtube.svg" data-src="image.svg" loading="lazy" alt="social-icons"></img></a>
+                                <a class="social-contact" target="_blank" href="https://youtube.com/@ethrealroma">Camber</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-company footer-blocks">
+                <h2 class="about-company__title">About company</h2>
+                <ul class="about-company__list">
+                    <li><a class="footer-links about-company__elements" href="#instuction-article">Instuction</a></li>
+                    <li><a class="footer-links about-company__elements" href="#rate-wrap">Rates</a></li>
+                    <li><a class="footer-links about-company__elements" href="#inform-of-bot__developers">About developers</a></li>
+                    <li><a class="footer-links about-company__elements" href="/HTML/news.html">News</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
-    <script src="/JS/script.js"></script>
+    <script src="/JS/footer.js"></script>
+    <script src="/JS/animation.js"></script>
+    <script src="/JS/burger-menu.js"></script>
 </body>
 </html>

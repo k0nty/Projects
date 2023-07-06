@@ -1,0 +1,220 @@
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.panel-container{
+    display: flex;
+}
+.nav-panel{
+    display: flex;
+    flex-direction: row;
+}
+.nav-panel__block{
+    padding: 20px;
+}
+.news-section{
+    display: flex;
+    margin-inline: 7.5%;
+}
+.news-arcticle{
+    flex: 2;
+    margin-inline: 7%;
+    margin-top: 1.5%;
+}
+.control-panel{
+    flex: 1;
+    height: 150vh;
+    width: 100%;
+    margin-top: 3.1%;
+}
+.calendar-container{
+    position: relative;
+    width: 100%;
+    border-radius: 40px;
+    border: #fff solid 2px;
+    overflow: hidden;
+    padding: 5%;
+}
+.calendar-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    opacity: 0.1;
+}
+.topic{
+    font-size: 44px;
+    text-align: center;
+    margin-top: 2%;
+}
+.img-soon{
+    margin-top: 1%;
+    width: 300px;
+}
+.news-blocks__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news-blocks{
+    margin-top: 3%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px 50px;
+}
+.news-blocks__topic, .date-info, .calendar-topic, .calendar-mounth{
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: none;
+    letter-spacing: 2px;
+}
+.date-info{
+    font-size: 1.2rem;
+}
+.news-block__information{
+    margin-top: 5%;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: none;
+    letter-spacing: 2px;
+}
+.info-img{
+    margin-top: 10%;
+    width: 250px;
+}
+.topic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar-topic{
+    color: #fff;
+    text-align: center;
+}
+.calendar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.calendar-elements{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar-elements__text{
+    font-size: 20px;
+    color: #fff;
+}
+.days{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.days li {
+    z-index: 1;
+    position: relative;
+    padding-block: 15px;
+}
+.days li.inactive {
+    color: #aaa;
+}
+.days li.active {
+    background: #214d79;
+    border-radius: 50%;
+}
+.calendar-container li {
+    color: #ffffff;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons span {
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.9rem;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.icons span:hover {
+    background: #adacac;
+}
+.select{
+    border-radius: 50%;
+    cursor: pointer;
+    background: #858585;
+}
+@media (max-width: 1280px) {
+
+}
+@media (max-width: 1024px) {
+    .control-panel{
+        display: none;
+    }
+}
+@media (max-width: 640px) {
+    .social-icons__active{
+        filter: grayscale(0%);
+        transform: translate(0);
+    }
+    .social-contact{
+        display: none;
+    }
+    .panel-container{
+        top: unset;
+        right: 0;
+    }
+    .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .panel-container{
+        display: flex;
+    }
+    .nav-panel{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-panel__block{
+        padding: 20px;
+    }
+    .topic{
+        font-size: 24px;
+        text-align: center;
+        margin-top: 2%;
+    }
+    .news-blocks__topic{
+        font-size: 18px;
+    }
+    .date-info{
+        font-size: 0.8rem;
+    }
+    .news-block__information{
+        font-size: 14px;
+    }
+    .info-img{
+        width: 100px
+    }
+    .logo{
+        width: 100px;
+    }
+}
