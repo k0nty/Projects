@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: space-between;
 }
+body{
+    overflow-x: hidden;
+}
 .panel-container{
     display: flex;
 }
