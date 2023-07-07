@@ -55,10 +55,6 @@ body{
     text-align: center;
     margin-top: 2%;
 }
-.img-soon{
-    margin-top: 1%;
-    width: 300px;
-}
 .news-blocks__container{
     display: flex;
     justify-content: space-between;
@@ -169,7 +165,10 @@ body{
 @media (max-width: 1280px) {
 
 }
-@media (max-width: 1024px) {
+@media (max-width: 1075px) {
+    .panel-container{
+        opacity: 1;
+    }
     .control-panel{
         display: none;
     }
