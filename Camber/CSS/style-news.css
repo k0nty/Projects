@@ -90,8 +90,9 @@ body{
     letter-spacing: 2px;
 }
 .info-img{
-    margin-top: 10%;
-    width: 250px;
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 30px;
 }
 .topic-container{
     display: flex;
@@ -174,6 +175,9 @@ body{
     }
 }
 @media (max-width: 640px) {
+    .info-img{
+        border-radius: 10px;
+    }
     .social-icons__active{
         filter: grayscale(0%);
         transform: translate(0);
@@ -213,9 +217,6 @@ body{
     }
     .news-block__information{
         font-size: 14px;
-    }
-    .info-img{
-        width: 100px
     }
     .logo{
         width: 100px;

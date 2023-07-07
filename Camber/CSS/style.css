@@ -904,6 +904,9 @@ h1, .camber{
 .yellow-span{
     color: hsl(50, 100%, 50%);
 }
+.red-text{
+    color: rgb(204, 0, 0);
+}
 /* end abs */
 .social-icons__active{
     filter: grayscale(0%);
@@ -979,10 +982,10 @@ h1, .camber{
         display: block;
     }
     .panel-container{
-        display: none;
+        opacity: 0;
     }
     .panel-container.menu-open{
-        display: block;
+        opacity: 1;
     }
     .panel-container{
         position: absolute;
