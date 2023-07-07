@@ -13,7 +13,7 @@
     z-index: 2;
     border-radius: 50%;
     border: #ffffff solid 3px;
-    background-image: url('/Camber/SVG/Vector.svg');
+    background-image: url('../SVG/Vector.svg');
     background-position: center;
     background-repeat: no-repeat;
     transform: scale(0);
@@ -227,7 +227,7 @@ h1, .camber{
     margin-left: 25px;
     border-radius: 50%;
     border: #ffffff solid 3px;
-    background-image: url('/Camber/SVG/Vector.svg');
+    background-image: url('../SVG/Vector.svg');
     background-position: center;
     background-repeat: no-repeat;
     transition: all ease 0.5s;
@@ -545,7 +545,7 @@ h1, .camber{
     margin-left: 20px;
     border-radius: 50%;
     border: #ffffff solid 3px;
-    background-image: url('/Camber/SVG/Vector.svg');
+    background-image: url('../SVG/Vector.svg');
     background-position: center;
     background-repeat: no-repeat;
     transition: all ease 0.5s;
